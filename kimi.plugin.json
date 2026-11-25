@@ -1,0 +1,48 @@
+{
+  "name": "ace-music-by-ace",
+  "version": "0.1.0",
+  "description": "Create ACE Music songs and lyrics, upload reference audio, cover one owned track, blend two, and retrieve the original task.",
+  "keywords": [
+    "ace-music",
+    "acemusic",
+    "music",
+    "audio",
+    "lyrics",
+    "acedatacloud"
+  ],
+  "author": {
+    "name": "Ace Data Cloud",
+    "email": "dev@acedata.cloud"
+  },
+  "homepage": "https://github.com/AceDataCloud/ACEMusicKimiCode",
+  "license": "MIT",
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "mcpServers": {
+    "acemusic": {
+      "transport": "http",
+      "url": "https://acemusic.mcp.acedata.cloud/mcp",
+      "bearerTokenEnvVar": "ACEDATACLOUD_API_TOKEN",
+      "enabledTools": [
+        "acemusic_list_models",
+        "acemusic_get_capabilities",
+        "acemusic_generate_music",
+        "acemusic_generate_custom_music",
+        "acemusic_generate_lyrics",
+        "acemusic_upload_audio",
+        "acemusic_cover_audio",
+        "acemusic_mashup_audio",
+        "acemusic_get_task",
+        "acemusic_get_tasks_batch",
+        "acemusic_list_tasks"
+      ]
+    }
+  },
+  "interface": {
+    "displayName": "ACE Music by Ace Data Cloud",
+    "shortDescription": "ACE Music tools and original-task results",
+    "longDescription": "Create ACE Music songs and lyrics, upload reference audio, cover one owned track, blend two, and retrieve the original task.",
+    "developerName": "Ace Data Cloud",
+    "websiteURL": "https://platform.acedata.cloud/services/acemusic"
+  }
+}
